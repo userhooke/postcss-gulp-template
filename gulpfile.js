@@ -1,10 +1,16 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
+var pcimport = require('postcss-import');
+var cssnext = require('postcss-cssnext');
+var mqpacker = require('css-mqpacker');
+var cssnano = require('cssnano');
 
 
 var processors = [
-autoprefixer
+pcimport,
+cssnext,
+// mqpacker,
+cssnano
 ];
 
 
