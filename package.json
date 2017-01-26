@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "autoprefixer": "^6.7.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0"
   }
 }
