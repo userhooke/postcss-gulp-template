@@ -1,3 +1,8 @@
+### Postcss plugins used
+- postcss-import
+- postcss-cssnext
+- cssnano
+
 ### Postcss-cli workflow
 Make sure postcss-cli installed globally
 ```
@@ -9,7 +14,7 @@ Then install dependencies
 npm install --production
 ```
 
-Npm scripts available:
+#### Npm scripts available:
 
 Compiling with cssnano
 ```
