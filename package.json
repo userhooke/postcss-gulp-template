@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postcss": "postcss -u postcss-import -u postcss-cssnext -u cssnano -o dest/css/main.css src/css/main.css --no-map --local-plugins",
+    "postcss-watch": "postcss -u postcss-import -u postcss-cssnext -o dest/css/main.css src/css/main.css --local-plugins --watch "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "css-mqpacker": "^5.0.1",
-    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^6.3.0",
+    "gulp-postcss": "^6.3.0"
+  },
+  "dependencies": {
+    "postcss": "^5.2.12",
+    "cssnano": "^3.10.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.1.0"
   }
